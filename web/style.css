@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
+}
+
+body {
+    background-color: #202020;
+    color: #eee;
+    display: block;
+    margin: 8px;
+}
+
+div {
+    display: block;
+}
+
+.sidepanel {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2a2d31;
+    text-align: center;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+
+img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.sidepanel img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #2a2d31;
+    padding: 0%;
+    margin-top: 10%;
+}
+
+.sidepanel a {
+    cursor: pointer;
+    color: #eee;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.title {
+    background-color: #202020;
+    padding: 20px;
+    margin: 20px 0px 0px 200px;
+    line-height: 1;
+    border-style: solid;
+    border-width: .5px 2px 2px 2px;
+    box-shadow: 0px 1px 1px 0px #121212;
+    border-color: #202020; 
+}
+
+.title h1 {
+    color: #eee;
+    font-size: 50px;
+}
+
+.section {
+    background-color: #202020;
+    padding: 20px;
+    margin: 5px 0px 0px 200px;
+    line-height: 1.2;
+    border-style: solid;
+    border-width: .5px 2px 2px 2px;
+    box-shadow: 0px 1px 1px 0px #121212;
+    border-color: #202020; 
+}
+
+h2 {
+    color: #eee;
+}
+
+.section ul {
+    margin-left: 20px;
+}
+
+li.indent {
+    margin-left: 20px;
+}
+
+#exp p {
+    font-style: italic;
+}
