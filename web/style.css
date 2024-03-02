@@ -6,8 +6,8 @@
 }
 
 body {
-    background-color: #202020;
-    color: #eee;
+    background-color: white;
+    color: black;
     display: block;
     margin: 8px;
 }
@@ -22,7 +22,7 @@ div {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #2a2d31;
+    background-color: black;
     text-align: center;
     box-shadow: 0 35px 55px rgba(0,0,0,0.1);
 }
@@ -38,7 +38,7 @@ img {
     width: 200px;
     border-style: solid;
     border-width: 2px;
-    border-color: #2a2d31;
+    border-color: black;
     padding: 0%;
     margin-top: 10%;
 }
@@ -52,44 +52,49 @@ img {
 }
 
 .title {
-    background-color: #202020;
+    background-color: white;
     padding: 20px;
     margin: 20px 0px 0px 200px;
     line-height: 1;
     border-style: solid;
     border-width: .5px 2px 2px 2px;
     box-shadow: 0px 1px 1px 0px #121212;
-    border-color: #202020; 
+    border-color: white; 
 }
 
 .title h1 {
-    color: #eee;
+    color: black;
     font-size: 50px;
 }
 
 .section {
-    background-color: #202020;
+    background-color: white;
     padding: 20px;
     margin: 5px 0px 0px 200px;
     line-height: 1.2;
     border-style: solid;
     border-width: .5px 2px 2px 2px;
-    box-shadow: 0px 1px 1px 0px #121212;
-    border-color: #202020; 
+    box-shadow: 0px 1px 1px 0px white;
+    border-color: white; 
 }
 
 h2 {
-    color: #eee;
+    color: black;
 }
 
 .section ul {
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 li.indent {
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 #exp p {
     font-style: italic;
+    font-size: medium;
+}
+
+#descriptions {
+    margin-left: 20px;
 }
