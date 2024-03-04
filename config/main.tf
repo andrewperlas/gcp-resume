@@ -1,8 +1,8 @@
 # Establish provider connection to GCP
 provider "google" {
-    project     = var.project_id
-    region      = var.region_id
-    zone        = var.zone_id
+  project = var.project_id
+  region  = var.region_id
+  zone    = var.zone_id
 }
 
 # Create new storage bucket in the US multi-region
