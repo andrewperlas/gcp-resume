@@ -1,4 +1,4 @@
-storage_name = "resume_bucket"
+storage_name = "dev_resume_bucket"
 location     = "US"
 project_id   = "psyched-age-416001"
 region_id    = "us-west1"
