@@ -1,0 +1,16 @@
+name: GCP storage website CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - id: 'auth'
+      name: 'Authenticate to Google Cloud'
+      uses: 'google-github-actions/auth@v0.4.0'
+      with:
+        workload_identity_provider: 'projects/88827294723/locations/global/workloadIdentityPools/github/providers/my-repo'
+        service_account: 'sa-github@psyched-age-416001.iam.gserviceaccount.com'
