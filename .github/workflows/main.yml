@@ -46,4 +46,4 @@ jobs:
       - id: apply
         name: Terraform Apply
         working-directory: config
-        run: terraform apply -var-file="resume-dev.tfvars"
+        run: terraform apply -var-file="resume-dev.tfvars" -auto-approve
