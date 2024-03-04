@@ -1,16 +1,30 @@
-name: GCP storage website CI
+name: Provision GCP storage website infra
 
 on:
   push:
     branches: [main]
 
 jobs:
-  build:
+  terraform:
+    permissions:
+      contents: "read"
+      id-token: "write"
+      pull-requests: "write" # Needed to comment on the PR
     runs-on: ubuntu-latest
     steps:
-    - id: 'auth'
-      name: 'Authenticate to Google Cloud'
-      uses: 'google-github-actions/auth@v0.4.0'
-      with:
-        workload_identity_provider: 'projects/88827294723/locations/global/workloadIdentityPools/github/providers/my-repo'
-        service_account: 'sa-github@psyched-age-416001.iam.gserviceaccount.com'
+      - uses: actions/checkout@v3
+      - id: "auth"
+        name: "Authenticate to Google Cloud"
+        uses: "google-github-actions/auth@v0.4.0"
+        with:
+          workload_identity_provider: "projects/88827294723/locations/global/workloadIdentityPools/github/providers/my-repo"
+          service_account: "sa-github@psyched-age-416001.iam.gserviceaccount.com"
+
+      - uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: 1.4.0
+
+      - id: fmt
+        name: Terraform fmt
+        working-directory: config
+        run: terraform fmt -check
