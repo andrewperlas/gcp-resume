@@ -1,2 +1,6 @@
+# Ignore terrform state files
 config/*/.terraform
 config/*/*.tfstate*
+
+# Ignore generated credentials from google-github-actions/auth
+gha-creds-*.json
