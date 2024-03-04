@@ -28,3 +28,17 @@ jobs:
         name: Terraform fmt
         working-directory: config
         run: terraform fmt -check
+
+      - id: init
+        name: Terraform Init
+        working-directory: config
+        run: terraform init
+
+      - id: validate
+        name: Terraform Validate
+        run: terraform validate -no-color
+
+      - id: plan
+        name: Terrform Plan
+        working-directory: config
+        run: terraform plan -no-color
