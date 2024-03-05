@@ -1,4 +1,4 @@
-name: Upload files to GCS bucket
+name: (Prod) Upload files to GCS bucket
 
 on:
   push:

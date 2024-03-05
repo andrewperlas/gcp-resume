@@ -1,5 +1,5 @@
-storage_name         = "dev_resume_bucket"
-tfstate_storage_name = "dev_tfstate_bucket"
+storage_name         = "stg_resume_bucket"
+tfstate_storage_name = "stg_tfstate_bucket"
 location             = "US"
 project_id           = "psyched-age-416001"
 region_id            = "us-west1"

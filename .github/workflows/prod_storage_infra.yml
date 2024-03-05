@@ -1,4 +1,4 @@
-name: Provision GCP storage website infra
+name: (Prod) Provision GCP storage website infra
 
 on:
   push:
