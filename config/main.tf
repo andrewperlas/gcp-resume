@@ -16,3 +16,9 @@ resource "google_storage_bucket" "static_website" {
     not_found_page   = "404.html"
   }
 }
+
+resource "google_storage_bucket" "terraform state" {
+  name          = var.tfstate_storage_name
+  location      = var.location
+  storage_class = var.storage_class
+}
