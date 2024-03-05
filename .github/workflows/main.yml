@@ -32,7 +32,7 @@ jobs:
       - id: init
         name: Terraform Init
         working-directory: config
-        run: terraform init
+        run: terraform init -input=false
 
       - id: validate
         name: Terraform Validate
