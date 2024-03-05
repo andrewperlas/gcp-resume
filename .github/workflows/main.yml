@@ -32,7 +32,7 @@ jobs:
       - id: init
         name: Terraform Init
         working-directory: config
-        run: terraform init -migrate-state -force-copy
+        run: terraform init
 
       - id: validate
         name: Terraform Validate
