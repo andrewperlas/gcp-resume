@@ -2,7 +2,7 @@ name: Provision GCP storage website infra
 
 on:
   push:
-    branches: [issue-4-gcp-resume]
+    branches: [develop]
 
 jobs:
   terraform:
