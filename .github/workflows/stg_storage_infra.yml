@@ -2,7 +2,7 @@ name: Provision GCP storage website infra
 
 on:
   push:
-    branches: [develop]
+    branches: [staging]
 
 jobs:
   terraform:
@@ -41,9 +41,9 @@ jobs:
       - id: plan
         name: Terrform Plan
         working-directory: config
-        run: terraform plan -var-file="resume-dev.tfvars" -no-color
+        run: terraform plan -var-file="stg-resume.tfvars" -no-color
 
       - id: apply
         name: Terraform Apply
         working-directory: config
-        run: terraform apply -var-file="resume-dev.tfvars" -auto-approve
+        run: terraform apply -var-file="stg-resume.tfvars" -auto-approve
