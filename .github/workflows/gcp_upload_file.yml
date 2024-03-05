@@ -26,3 +26,4 @@ jobs:
         with:
           path: "web"
           destination: "dev_resume_bucket"
+          parent: false
