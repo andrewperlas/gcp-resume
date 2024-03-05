@@ -32,19 +32,11 @@ jobs:
       - id: init
         name: Terraform Init
         working-directory: config
-        run: terraform init -input=false -backend-config=backend.tf
+        run: terraform init
 
       - id: validate
         name: Terraform Validate
         run: terraform validate -no-color
-
-      - id: import
-        name: Terraform Import
-        run: terraform import google_storage_bucket.static_website psyched-age-416001/dev_resume_bucket
-
-      - id: import2
-        name: Terraform Import
-        run: terraform import google_storage_bucket.terraform_state psyched-age-416001/dev_tfstate_bucket
 
       - id: plan
         name: Terrform Plan
@@ -54,4 +46,4 @@ jobs:
       - id: apply
         name: Terraform Apply
         working-directory: config
-        run: terraform apply -var-file="resume-dev.tfvars" -auto-approve
+        run: terraform apply -var-file="resume-dev.tfvars" -auto-approve -destroy
