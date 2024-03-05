@@ -40,11 +40,11 @@ jobs:
 
       - id: import
         name: Terraform Import
-        run: terraform import google_storage_bucket.static_website
+        run: terraform import google_storage_bucket.static_website psyched-age-416001/dev_resume_bucket
 
       - id: import2
         name: Terraform Import
-        run: terraform import google_storage_bucket.terraform_state
+        run: terraform import google_storage_bucket.terraform_state psyched-age-416001/dev_tfstate_bucket
 
       - id: plan
         name: Terrform Plan
