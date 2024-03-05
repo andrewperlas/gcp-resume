@@ -32,7 +32,7 @@ jobs:
       - id: init
         name: Terraform Init
         working-directory: config
-        run: terraform init
+        run: terraform init -migrate-state -force-copy
 
       - id: validate
         name: Terraform Validate
@@ -46,4 +46,4 @@ jobs:
       - id: apply
         name: Terraform Apply
         working-directory: config
-        run: terraform apply -var-file="resume-dev.tfvars" -auto-approve -destroy
+        run: terraform apply -var-file="resume-dev.tfvars" -auto-approve
