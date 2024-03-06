@@ -1,6 +1,0 @@
-storage_name         = "prod_resume_bucket"
-tfstate_storage_name = "prod_tfstate_bucket"
-location             = "US"
-project_id           = "psyched-age-416001"
-region_id            = "us-west1"
-zone_id              = "us-west1-b"
