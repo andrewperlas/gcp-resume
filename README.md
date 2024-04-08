@@ -7,6 +7,5 @@ I am kicking off my journey to learn more cloud and devops technologies by tackl
 #### Resources
 
 [Resume (prod)](https://resume.andrewperlas.com)<br>
-[Resume (dev)](https://devresume.andrewperlas.com)<br>
 [Repo](https://github.com/andrewperlas/gcp-resume)<br>
 [Blog](https://techblog.andrewperlas.com)<br>
