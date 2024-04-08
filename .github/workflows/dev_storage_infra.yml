@@ -2,7 +2,7 @@ name: (Dev) Provision GCP storage website infra
 
 on:
   push:
-    branches: [develop]
+    branches: [nullbranch]
 
 jobs:
   terraform:

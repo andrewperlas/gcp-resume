@@ -2,7 +2,7 @@ name: (Dev) Upload files to GCS bucket
 
 on:
   push:
-    branches: [develop]
+    branches: [nullbranch]
 
 jobs:
   upload_to_bucket:
