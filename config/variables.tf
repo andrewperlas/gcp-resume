@@ -3,6 +3,11 @@ variable "storage_name" {
   type        = string
 }
 
+variable "tfstate_storage_name" {
+  description = "Storage Account name"
+  type        = string
+}
+
 variable "location" {
   description = "Resource location"
   type        = string
@@ -16,6 +21,11 @@ variable "storage_class" {
 }
 
 variable "project_id" {
+  description = "The default project to manage GCP resources in"
+  type        = string
+}
+
+variable "tfstate_project_id" {
   description = "The default project to manage GCP resources in"
   type        = string
 }
