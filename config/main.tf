@@ -1,14 +1,6 @@
 # Establish provider connections to GCP
 provider "google" {
-  alias   = "project"
   project = var.project_id
-  region  = var.region_id
-  zone    = var.zone_id
-}
-
-provider "google" {
-  alias   = "infra"
-  project = var.tfstate_project_id
   region  = var.region_id
   zone    = var.zone_id
 }
@@ -27,7 +19,7 @@ resource "google_storage_bucket" "static_website" {
 }
 
 resource "google_storage_bucket" "terraform_state" {
-  project       = var.tfstate_project_id
+  project       = var.project_id
   name          = var.tfstate_storage_name
   location      = var.location
   storage_class = var.storage_class

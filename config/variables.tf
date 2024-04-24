@@ -25,11 +25,6 @@ variable "project_id" {
   type        = string
 }
 
-variable "tfstate_project_id" {
-  description = "The default project to manage GCP resources in"
-  type        = string
-}
-
 variable "region_id" {
   description = "The default region to manage GCP resources in"
   type        = string
