@@ -11,8 +11,8 @@
 <body>
     <div class="sidepanel">
         <img src="./images/portrait.jpg">
-        <a href="#profile">Profile</a>
-        <a href="#exp">Experience</a>
+        <a href="#exp">Professional Experience</a>
+        <a href="#projects">Personal Projects</a>
         <a href="#certs">Certifications</a>
         <a href="#edu">Education</a>
     </div>
@@ -27,52 +27,34 @@
             <a href="./docs/andrew-perlas-resume.pdf">Resume</a>
         </span>
     </div>
-    <div class="section" id="profile">
-        <h1>Profile</h1>
-        <br>
-
-        <p>Hello I am Andrew, technology professional with 9+ years of progressive experience in MSP, federal, and small
-            business</p>
-        <br>
-
-        </p>My technical skills and high level of customer service throughout my employment at an MSP company resulted
-        in completion of over 12,000 customer tickets (the most in the MSP's history) and an overall personal NPS score
-        of 93 rated
-        by the clients I served. My expertise in Windows server administration and virtualization solutions (such as
-        VMWare
-        and Citrix VDA) were essential in supporting the Navy's IT infrastructure at Pearl Harbor Naval Shipyard. I have
-        been able to expand my skillset into the DevOps realm working with technologies such as Git, Google Cloud, and
-        Docker in my current role as an IT Engineer at a game/software development company.</p>
-    </div>
     <div class="section" id="exp">
-        <h1>Experience</h1>
-        <h3>Professional</h3>
+        <h2><u>Professional Experience</u></h2>
 
         <div class="section" id="descriptions">
-            <h3>KOMODO Hawai'i</h3>
+            <h3>KOMODO Hawaii</h3>
             <br>
 
             <h4>IT Engineer/Systems Administrator</h4>
             <p>Honolulu, HI | Jan 2024 - Present</p>
             <br>
             <ul>
-                <li>Lead the migrations of production web apps, hosting, and domains from legacy infrastructure
-                    to modern cloud-based systems</li>
-                <li>Partner with executive team members to establish IT operations and policies in areas such
-                    as security controls, network configuration, identity and access management, and endpoint management
+                <li>Migrate production web applications hosted on AWS by external partner to internally managed
+                    <b>GCP</b>,
+                    <b>Cloudflare</b>, and <b>Github</b> infrastructure
                 </li>
-                <li>Collaborate with software devs on improvements to product development by implementing role-based
-                    access control, establishing infrastructure monitoring, and hardening security with Cloudflare
-                    enterprise features
+                <li>Collaborate with software devs to increase security of product development through implementation
+                    of <b>IAM</b> role-based access controls and password/secret management
                 </li>
-                <li>Audit organization's SaaS subscriptions and align them with actual business needs, reducing monthly
-                    costs by thousands of dollars.</li>
+                <li>Strengthen security of various company systems through <b>Slack</b> and <b>Google Workspace</b> 2FA
+                    enforcement, converting <b>Linux</b> ssh auth from passwords to keys, and building web application
+                    firewall rules
+                </li>
+                <li>Optimize server resource allocation for an over-provisioned ecommerce web server, cutting monthly
+                    hosting costs by 65%</li>
+                <li>Develop comprehensive <b>documentation</b> of IT services and operations to enhance system clarity
+                    and
+                    operational efficiency</li>
             </ul>
-            <br>
-
-            <p><b>Skills:</b> Google Cloud (IAM, Artifact Registry, Run, SQL, Secrets Manager) • Google Workspace • Git
-                • Github Actions • Docker •
-                Cloudflare (DNS, WAF, Zero Trust) • Vendor Management</p>
             <br>
 
             <h3>Client Solution Architects</h3>
@@ -83,133 +65,78 @@
             <p>Pearl Harbor Naval Shipyard, HI | Sep 2022 - Jan 2024</p>
             <br>
             <ul>
-                <li>Primary admin for configuration, maintenance, and reliability of the Citrix environment hosting
-                    virtual apps and desktops</li>
-                <ul>
-                    <li class="indent">Perform monthly patching and application updates to images. Updated images are
-                        pushed out to the entire Citrix farm through provisioning and Machine Creation Services</li>
-                    <li class="indent">Plan and execute the cutover of the existing Xenapp 7.15 farm to an updated
-                        Citrix 2203 farm</li>
-                </ul>
-                <li>Remediated security vulnerabilities identified by Nessus vulnerability scans. Arrange a plan of
-                    action if unable to immediately address the vulnerability</li>
-                <li>Collaborated with various branches to specify firewall and HBSS rules for systems and apps to allow
-                    only necessary network traffic and protocols coming inbound and going outbound on servers</li>
-                <li>Migrated services, such as DHCP and WSUS, running on Windows Server 2012 R2 operating systems to
-                    newer Windows Server 2019/2022 virtual machines hosted on VMware</li>
+                <li>Performed monthly patching, <b>Nessus ACAS</b> vulnerability remediations, and application updates
+                    on
+                    <b>VMware</b> images to pushing out to <b>Citrix VDA</b> farm through Machine Creation Services
+                </li>
+                <li>Planned and executed the cutover of the Shipyard's Citrix Xenapp 7.15 farm to Citrix 2203, requiring
+                    coordination with networking and <b>HBSS</b> teams to ensure production traffic will be properly
+                    routed</li>
+                <li>Migrated Windows domain services, such as DHCP and WSUS, from legacy Windows Server 2012 R2
+                    servers to updated <b>Windows Server 2019/2022</b> virtual machines</li>
             </ul>
-            <br>
-
-            <p><b>Skills:</b> Windows Server 2012r2 - 2022 • Citrix Virtual Desktops and Apps • VMware • Active
-                Directory • DNS • DHCP • Patch Management • STIGs • PKI • ACAS • HBSS • Customer Service • Problem
-                Solving • Teamwork</p>
             <br>
 
             <h3>TechMD</h3>
             <br>
 
             <h4>Professional Services Consultant</h4>
-            <p>Remote | Feb 2021 - June 2022</p>
+            <p>Remote | Jan 2015 - June 2022</p>
             <br>
             <ul>
-                <li>Plan, manage, and execute on project deliverables designed to improve the IT infrastructures of our
-                    clients and leverage technology to increase end user productivity and business performance</li>
-                <ul>
-                    <li class="indent">Examples: On-premises server migrations to cloud solutions, configuration of
-                        virtual desktop environments through Azure and Citrix, facilitating office moves, and replacing
-                        network firewalls/switches/access points</li>
-                </ul>
-                <li>Conduct webinars for clients prior to milestone changes to prepare them and educate them on what to
-                    expect. After implementation, host “office hours” meetings with the end users to answer questions
-                    and solve issues</li>
-                <li>Automate a frequent project deliverable for migrations of user workstations to AzureAD using
-                    Powershell</li>
-                <ul>
-                    <li class="indent">This manual process of about 20 minutes per machine could now be fully
-                        accomplished in less than 5 minutes by running a script</li>
-                    <li class="indent">Use of the script allowed Consultants to complete this deliverable well under
-                        budget and utilize their saved time for other projects</li>
-                </ul>
-            </ul>
-            <br>
-
-            <p><b>Skills:</b> Azure (AD, AVD, Virtual Machines, Virtual Networks, Cost Management) • Office 365 •
-                Sharepoint • OneDrive • Exchange • Powershell • Windows Server 2008 - 2022 • HyperV • VMware • Dell
-                Sonicwall • Cisco Meraki • Citrix Virtual Desktops and Apps • Datto BCDR • VPN • NAT • ACLs • VLAN •
-                SD-WAN • Documentation • Project Management</p>
-            <br>
-
-            <h4>Technical Lead/Escalations Analyst</h4>
-            <p>Remote | May 2019 - Feb 2021</p>
-            <br>
-            <ul>
-                <li>Serve as tier 3 level support for ticket escalation and as a direct escalation point of contact for
-                    client VIPs</li>
-                <li>Own the most challenging and involved service team tickets including network cutovers, server
-                    outages, and main line of business application updates</li>
-            </ul>
-            <br>
-
-            <p><b>Skills:</b> Active Directory • Group Policy • Windows 10 • Ubiquiti UniFi • DRAC/iLo • SQL • Problem
-                Solving </p>
-            <br>
-
-            <h4>Team Lead</h4>
-            <p>Santa Ana, CA | Apr 2018 - May 2019</p>
-            <br>
-            <ul>
-                <li>Mentor members of the service team on the technical and operational knowledge needed to achieve
-                    excellent customer service and to exceed our service level agreements</li>
-                <li>Provide best practice recommendations to our clients including upgrades to legacy hardware,
-                    migration of on-premises Exchange or files to Office 365, and establish secondary systems for
-                    increased business continuity</li>
-                <li>Introduce improvements to IT ops processes for better efficiency and effectiveness, such as
-                    procedures to drive long-standing open tickets to resolution and methods for executing more
-                    successful on-site client visits</li>
-
-            </ul>
-            <br>
-
-            <p><b>Skills:</b> Leadership • Customer Service • Communication • Teamwork</p>
-            <br>
-        </div>
-
-        <h1>Experience</h1>
-        <h3>Projects</h3>
-
-        <div class="section" id="descriptions">
-            <h3>The Cloud Resume Challenge</h3>
-            <ul>
-                <li>Created a static website using HTML and CSS</li>
-                <li>Provisioned GCP infrastructure for the website using Terraform</li>
-                <li>Configured DNS for custom domain name directed to GCP static website endpoint - <a
-                        href="https://resume.andrewperlas.com">https://resume.andrewperlas.com</a></li>
-                <li>Maintained version control on Github</li>
-                <li>Applied CI/CD automation via Github Actions</li>
-            </ul>
-            <br>
-
-            <p><b>Skills:</b> Google Cloud • Terraform • Git • Github Actions • Markdown • HTML • CSS</p>
-            <br>
-
-            <h3>Homelab</h3>
-            <ul>
-                <li>Configured Unifi networking equipment (gateway, PoE switch, and access points)</li>
-                <ul>
-                    <li>VLANs created to segregate separate networks for guests, smarthome devices, and management</li>
-                </ul>
-                <li>Installed and maintain Ubuntu Server on Intel NUC for hosting docker containers running web
-                    applications (dashboards, Unifi controller, home automation)</li>
-                <li>Repurposed old PC as a NAS running unRAID for RAID5 file storage and to run local virtual machines
+                <li>Converted clients' on-premises services to cloud solutions, for example: migrated physical Windows
+                    servers to
+                    <b>Azure</b> virtual machines or converted locally hosted software to a SaaS product
+                </li>
+                <li>Configured virtual desktop environments through Azure and Citrix for CPA clients to optimize
+                    accounting
+                    software installs and updates</li>
+                <li>Automated a frequent project deliverable of migrating user workstations and accounts from an
+                    on-premises
+                    <b>Active Directory</b> domain to <b>AzureAD</b> using <b>Powershell</b>, reducing a 20-minute
+                    manual task to 5 minutes
+                    and resulted in projects with this deliverable to complete well under budget
                 </li>
             </ul>
             <br>
-
-            <p><b>Skills:</b> Linux • Vim • Docker Compose • Ubiquiti UniFi • VLAN • unRAID</p>
         </div>
     </div>
+
+    <div class="section" id="projects">
+        <h2><u>Personal Projects</u></h2>
+
+        <div class="section" id="descriptions">
+            <h4>The Cloud Resume Challenge</h4>
+            <ul>
+                <li>Created a static website using <b>HTML</b> and <b>CSS</b></li>
+                <li>Provisioned <b>GCP</b> infrastructure for the website using <b>Terraform</b></li>
+                <li>Configured <b>DNS</b> for custom domain name directed to GCP static website endpoint - <a
+                        href="https://resume.andrewperlas.com">https://resume.andrewperlas.com</a></li>
+                <li>Maintained version control on <b>Github</b></li>
+                <li>Applied CI/CD automation via <b>Github Actions</b></li>
+            </ul>
+            <br>
+
+            <h4>Homelab</h4>
+            <ul>
+                <li>Configured <b>Unifi</b> networking equipment (gateway, PoE switch, and access points)</li>
+                <ul>
+                    <li><b>VLANs</b> created to segregate separate networks for guests, smarthome devices, and
+                        management
+                    </li>
+                </ul>
+                <li>Installed and maintain <b>Ubuntu Server</b> on Intel NUC for hosting <b>Docker</b> containers
+                    running web
+                    applications (dashboards, Unifi controller, home automation)</li>
+                <li>Repurposed old PC as a NAS running <b>unRAID</b> for RAID5 file storage and to run local virtual
+                    machines
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <div class="section" id="certs">
-        <h1>Certifications</h1>
+        <h2><u>Certifications</u></h2>
         <br>
 
         <p>July 2022</p>
@@ -220,11 +147,12 @@
         </a>
     </div>
     <div class="section" id="edu">
-        <h1>Education</h1>
+        <h2><u>Education</u></h2>
         <br>
 
         <h4>California State University San Marcos</h4>
-        <p>B.S. Management Information Systems | Aug 2010 - Dec 2014</p>
+        <p>Bachelor of Science in Business Administration (Concentration: Management Information Systems) | Aug 2010 -
+            Dec 2014</p>
     </div>
 </body>
 
