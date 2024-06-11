@@ -9,7 +9,13 @@ variable "tfstate_storage_name" {
 }
 
 variable "location" {
-  description = "Resource location"
+  description = "General resource location"
+  type        = string
+  default     = "US"
+}
+
+variable "storage_location" {
+  description = "Storage location"
   type        = string
   default     = "US"
 }
