@@ -1,5 +1,6 @@
 storage_name         = "ap-resume-bucket"
 tfstate_storage_name = "ap-tfstate-bucket"
+storage_location     = "us-west1"
 location             = "US"
 project_id           = "psyched-age-416001"
 region_id            = "us-west1"

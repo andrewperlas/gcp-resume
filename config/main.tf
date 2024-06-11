@@ -10,7 +10,7 @@ provider "google" {
 resource "google_storage_bucket" "static_website" {
   project       = var.project_id
   name          = var.storage_name
-  location      = var.location
+  location      = var.storage_location
   storage_class = var.storage_class
   website {
     main_page_suffix = "index.html"
