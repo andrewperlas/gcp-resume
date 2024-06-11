@@ -1,4 +1,4 @@
-storage_name         = "ap-resume"
+storage_name         = "ap-resume-bucket"
 tfstate_storage_name = "ap-tfstate-bucket"
 location             = "US"
 project_id           = "psyched-age-416001"
