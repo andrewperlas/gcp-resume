@@ -11,6 +11,7 @@
 <body>
     <div class="sidepanel">
         <img src="./images/portrait.jpg">
+        <a href="#skills">Skills</a>
         <a href="#exp">Professional Experience</a>
         <a href="#projects">Personal Projects</a>
         <a href="#certs">Certifications</a>
@@ -26,6 +27,14 @@
             <a href="https://techblog.andrewperlas.com">Blog</a> •
             <a href="./docs/andrew-perlas-resume.pdf">Resume</a>
         </span>
+    </div>
+    <div class="section" id="skills">
+        <h2><u>Skills</u></h2>
+        <br />
+        GCP (IAM, Load Balancer, Cloud Armor, Cloud Run, SQL, Secrets Manager) | Cloudflare (DNS, WAF, Zero Trust) |
+        Azure (Active Directory, Virtual Desktop) | Google Workspace | Linux | Git | Docker | GitHub Actions | Terraform
+        | Powershell | Python | Windows Server | Group Policy | Microsoft 365 | Exchange | Citrix VDA | VMware | STIGs
+
     </div>
     <div class="section" id="exp">
         <h2><u>Professional Experience</u></h2>
@@ -107,13 +116,21 @@
         <h2><u>Personal Projects</u></h2>
 
         <div class="section" id="descriptions">
-            <h4>The Cloud Resume Challenge</h4>
+            <h4>Cloud Resume Challenge</h4>
             <ul>
                 <li>Created a static website using <b>HTML</b> and <b>CSS</b></li>
                 <li>Provisioned <b>GCP</b> infrastructure for the website using <b>Terraform</b></li>
-                <li>Configured <b>DNS</b> for custom domain name directed to GCP static website endpoint - <a
-                        href="https://resume.andrewperlas.com">https://resume.andrewperlas.com</a></li>
+                <li>Configured <b>DNS</b> for custom domain name directed to GCP load balancer with static storage
+                    bucket backend
+                    <ul>
+                        <li><a href="https://resume.andrewperlas.com">https://resume.andrewperlas.com</a></li>
+                    </ul>
                 <li>Maintained version control on <b>Github</b></li>
+                <ul>
+                    <li><a
+                            href="https://github.com/andrewperlas/gcp-resume">https://github.com/andrewperlas/gcp-resume</a>
+                    </li>
+                </ul>
                 <li>Applied CI/CD automation via <b>Github Actions</b></li>
             </ul>
             <br>
@@ -128,7 +145,9 @@
                 </ul>
                 <li>Installed and maintain <b>Ubuntu Server</b> on Intel NUC for hosting <b>Docker</b> containers
                     running web
-                    applications (dashboards, Unifi controller, home automation)</li>
+                    applications and services (dashboards, Unifi controller, home automation)</li>
+                <li>Deployed Cloudflare Tunnels for secure and encrypted external access to hosted applications and
+                    services</li>
                 <li>Repurposed old PC as a NAS running <b>unRAID</b> for RAID5 file storage and to run local virtual
                     machines
                 </li>
