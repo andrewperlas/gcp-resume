@@ -19,10 +19,11 @@ To level up my knowledge of cloud and devops technologies, I am tackling [Forres
         - Using a Firestore noSQL database
     - API for frontend Javascript to communicate with backend Firestore database
         - API language: Python
-        - [add_visit.py](/api/add_visit.py)
+        - [main.py](/functions/main.py)
+            - Entry point for Cloud Function
+        - [count_visits.py](/functions/count_visits.py)
             - `current_count` function gets the number of current "documents" in the database and appends it as a value for the next added "document"
                 - "document" = database entry
-        - [count_visits.py](/api/count_visits.py)
 
 ## References
 
