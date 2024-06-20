@@ -14,6 +14,7 @@ def current_count():
     total = query_result[0][0].value
     return total
 
-# Add visits with auto IDs
-data = {'description': 'Another visitor count', 'visitorNumber': current_count()}
-db.collection('visits').add(data)
+# Add visits with Firestore auto IDs
+def add_count():
+    data = {'description': 'Another visitor count', 'visitorNumber': current_count()}
+    db.collection('visits').add(data)
