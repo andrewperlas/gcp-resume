@@ -1,0 +1,11 @@
+gcloud functions deploy add-visitor-count \
+--project=psyched-age-416001 \
+--region=us-west1 \
+--runtime=python312 \
+--source=C:\\Users\\HousePerlas-PC01\\Documents\\repos\\gcp-resume\\functions \
+--entry-point=add_count \
+--trigger-http \
+--no-allow-unauthenticated \
+--gen2 \
+--memory=128Mi \
+--cpu=83m
