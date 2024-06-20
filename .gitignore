@@ -9,5 +9,8 @@ config/.terraform.lock.hcl
 # Ignore generated credentials from google-github-actions/auth
 gha-creds-*.json
 
+#Ignore firebase_admin service account key
+sa-api-firestore.json
+
 # Ignore misc files
 debug.log

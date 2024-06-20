@@ -1,10 +1,5 @@
-import pyrebase
+import firebase_admin
+from firebase_admin import credentials
 
-config = {
-    "apiKey": ,
-    "authDomain": ,
-    "databaseURL" ,
-    "storageBucket": 
-}
-
-firebase = pyrebase.initialize_app(config)
+cred = credentials.Certificate("sa-api-firestore.json")
+firebase_admin.initialize_app(cred)
