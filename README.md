@@ -16,9 +16,16 @@ To level up my knowledge of cloud and devops technologies, I am tackling [Forres
 - Visitor Counter
     - Javascript file that contains the frontend code to display the counter and add to the total count
     - Database for server-side storage of the total count
-    - API for frontend Javascript to communicate with backend database
+        - Using a Firestore noSQL database
+    - API for frontend Javascript to communicate with backend Firestore database
+        - API language: Python
+        - [add_visit.py](/api/add_visit.py)
+            - `current_count` function gets the number of current "documents" in the database and appends it as a value for the next added "document"
+                - "document" = database entry
+        - [count_visits.py](/api/count_visits.py)
 
 ## References
 
 - [Setting up GCP Workload Identity Federation through a Service Account](https://github.com/google-github-actions/auth?tab=readme-ov-file#workload-identity-federation-through-a-service-account)
+- [Get number of "documents" in Firestore "collection"](https://stackoverflow.com/questions/65550168/get-number-of-documents-in-collection-firestore)
 
