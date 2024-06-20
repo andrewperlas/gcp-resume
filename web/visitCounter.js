@@ -1,22 +1,24 @@
-// Check if localStorage is available
-if (typeof (Storage) !== "undefined") {
-    // Retrieve the current visit count
-    let visitCount = localStorage.getItem('visitCount');
+document.addEventListener('DOMContentLoaded', (event) => {
+    // The URL of our Cloud Function API
+    const cloudFunctionUrl = 'https://us-west1-psyched-age-416001.cloudfunctions.net/add-visitor-count'
 
-    // If visitCount is not available, initialize it to 0
-    if (visitCount === null) {
-        visitCount = 0;
-    }
+    // Data to send in a POST request
+    const data = {
+        message: 'Knock knock from the resume website!'
+    };
 
-    // Increment the visit count
-    visitCount++;
+    // Options for the fecth request
+    const options = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON
+    };
 
-    // Store the updated visit count back in localStorage
-    localStorage.setItem('visitCount', visitCount);
-
-    // Display the visit count in the HTML element
-    document.getElementById('visit-count').innerText = visitCount;
-} else {
-    // If localStorage is not supported, display a message
-    document.getElementById('visit-count').innerText = "localStorage is not supported by your browser.";
-}
+    // Send the POST request
+    fetch(cloudFunctionUrl, options)
+        .then(response => response.text())
+        .then(result => console.log('Success:', result))
+        .catch(error => console.error('Error:', error));
+});
