@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON
+        body: JSON.stringify(data)
     };
 
     // Send the POST request
