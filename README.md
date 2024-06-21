@@ -29,4 +29,5 @@ To level up my knowledge of cloud and devops technologies, I am tackling [Forres
 
 - [Setting up GCP Workload Identity Federation through a Service Account](https://github.com/google-github-actions/auth?tab=readme-ov-file#workload-identity-federation-through-a-service-account)
 - [Get number of "documents" in Firestore "collection"](https://stackoverflow.com/questions/65550168/get-number-of-documents-in-collection-firestore)
+- [CORS in 100 Seconds](https://www.youtube.com/watch?v=4KHiSt0oLJ0)
 
