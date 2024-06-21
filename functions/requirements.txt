@@ -1,5 +1,5 @@
 flask
 firebase_admin
 requests
-functions-framework
+functions_framework
 numpy
