@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         message: 'Knock knock from the resume website!'
     };
 
-    // Options for the fecth request
-    const options = {
+    // Options for the fetch request
+    const postOptions = {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -16,9 +16,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
         body: JSON.stringify(data)
     };
 
+    const getOptions = {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    };
+
     // Send the POST request
-    fetch(cloudFunctionUrl, options)
+    fetch(cloudFunctionUrl, postOptions)
         .then(response => response.text())
         .then(result => console.log('Success:', result))
+        .catch(error => console.error('Error:', error));
+
+    // GET request
+    fetch(cloudFunctionUrl, getOptions)
+        .then(response => response.json())
+        .then(result => console.log(result))
         .catch(error => console.error('Error:', error));
 });
