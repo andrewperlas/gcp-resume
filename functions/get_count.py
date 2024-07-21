@@ -20,7 +20,8 @@ def get_count(collectionName):
     # stream for results
     results = query.stream()
 
-    return results
+    for result in results:
+        count = result.to_dict()
+        print(count)
 
-test = get_count("visits")
-print(test)
+get_count("visits")
