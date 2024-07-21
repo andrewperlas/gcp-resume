@@ -22,6 +22,6 @@ def get_count(collectionName):
 
     for result in results:
         count = result.to_dict()
-        print(count)
+        print(count['ID Number'])
 
 get_count("visits")
