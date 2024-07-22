@@ -15,5 +15,6 @@ sa-api-firestore.json
 # Ignore misc files
 debug.log
 
-# Ignore python virtual env
+# Ignore python virtual env and pycache
 .venv
+__pycache__

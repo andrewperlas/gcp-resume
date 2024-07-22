@@ -15,13 +15,11 @@ def get_count(collectionName):
     collection_ref = db.collection(collectionName)
 
     # query for the newest document in the collection; decending order and limit results to just 1
-    query = collection_ref.order_by("description", direction=firestore.Query.DESCENDING).limit(1)
+    query = collection_ref.order_by("timestamp", direction=firestore.Query.DESCENDING).limit(1)
 
     # stream for results
     results = query.stream()
 
     for result in results:
         count = result.to_dict()
-        print(count['ID Number'])
-
-get_count("visits")
+        print(count['id'])

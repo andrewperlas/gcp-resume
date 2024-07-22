@@ -6,15 +6,23 @@ from firebase_admin import firestore
 from count_visits import current_count
 from datetime import datetime
 
+# Use firestore service account private key to authenticate to database
 cred = credentials.Certificate("sa-api-firestore.json")
+
+# Use datetime to record timestamp of document creation
 now = datetime.now()
 formatted_now = now.strftime("%m/%d/%Y %H:%M:%S")
 
 firebase_admin.initialize_app(cred)
 
-@functions_framework.http
+db = firestore.client()
+data = {'id': current_count(), 'timestamp': formatted_now}
+db.collection('visits').add(data)
+
+#@functions_framework.http
 
 # Add visits to Firestore database using auto IDs
+'''
 def add_count():
     db = firestore.client()
     data = {'description': formatted_now, 'ID': current_count()}
@@ -46,3 +54,4 @@ def cors_enabled_function(request):
     add_count()
 
     return ("Count added", 200, headers)
+'''
