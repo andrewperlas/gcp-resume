@@ -13,6 +13,13 @@ formatted_now = now.strftime("%m/%d/%Y %H:%M:%S")
 firebase_admin.initialize_app(cred)
 
 @functions_framework.http
+
+# Add visits to Firestore database using auto IDs
+def add_count():
+    db = firestore.client()
+    data = {'description': formatted_now, 'ID': current_count()}
+    db.collection('visits').add(data)
+
 def cors_enabled_function(request):
     # For more information about CORS and CORS preflight requests, see:
     # https://developer.mozilla.org/en-US/docs/Glossary/Preflight_request
@@ -39,10 +46,3 @@ def cors_enabled_function(request):
     add_count()
 
     return ("Count added", 200, headers)
-
-# Add visits to Firestore database using auto IDs
-def add_count():
-    db = firestore.client()
-    data = {'description': formatted_now, 'ID Number': current_count()}
-    
-    db.collection('visits').add(data)
