@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     };
 
     // Options for the fetch request
-    const Options = {
+    const options = {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     };
 
     // Send the POST request
-    fetch(cloudFunctionUrl, Options)
+    fetch(cloudFunctionUrl, options)
         .then(response => response.text())
         .then(result => console.log('Success:', result))
         .catch(error => console.error('Error:', error));
