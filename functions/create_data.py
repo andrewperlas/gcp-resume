@@ -9,11 +9,11 @@ from datetime import datetime
 # Use firestore service account private key to authenticate to database
 cred = credentials.Certificate("sa-api-firestore.json")
 
+firebase_admin.initialize_app(cred)
+
 # Use datetime to record timestamp of document creation
 now = datetime.now()
 formatted_now = now.strftime("%m/%d/%Y %H:%M:%S")
-
-firebase_admin.initialize_app(cred)
 
 db = firestore.client()
 data = {'id': current_count(), 'timestamp': formatted_now}
