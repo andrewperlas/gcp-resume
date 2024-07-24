@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     // The URL of our Cloud Function API
-    const cloudFunctionUrl = 'https://us-west1-psyched-age-416001.cloudfunctions.net/post'
+    const cloudFunctionUrl = 'https://resumeapi.andrewperlas.com'
 
     // Data to send in a POST request
     const data = {
