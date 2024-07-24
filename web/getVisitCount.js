@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     // GET request
-    fetch(cloudFunctionUrl, Options)
-        .then(response => response.json())
-        .then(json => p.innerHTML = json[0].id)
+    fetch(cloudFunctionUrl, options)
+        .then(response => response.text())
+        .then(result => console.log('Success:', result))
         .catch(error => console.error('Error:', error));
 });
